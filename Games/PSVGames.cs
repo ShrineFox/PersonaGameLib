@@ -11,19 +11,26 @@ namespace PersonaGameLib
         {
             new Game() { Name = "Persona 4 Golden", ShortName = "P4G", TitleID = "PCSE00120", Region = "USA",
                 Patches = Patches.PSVP4GUSAPatches,
-                ImageUrl = "https://www.mobygames.com/images/covers/l/276137-persona-4-golden-ps-vita-front-cover.png" },
+                GBURL = "15703", SFName = "P4G-PSV",
+                ImageUrl = "https://cdn.mobygames.com/covers/6989549-persona-4-golden-front-cover.png" },
             new Game() { Name = "Persona 4 Golden", ShortName = "P4G", TitleID = "PCSB00245", Region = "EUR",
                 Patches = Patches.PSVP4GEURPatches,
-                ImageUrl = "https://www.mobygames.com/images/covers/l/276137-persona-4-golden-ps-vita-front-cover.png" },
+                ImageUrl = "https://cdn.mobygames.com/covers/6989549-persona-4-golden-front-cover.png" },
             new Game() { Name = "Persona 3 Dancing", ShortName = "P3D", TitleID = "PCSE01274", Region = "USA",
                 Patches = Patches.PSVP3DUSAPatches,
-                ImageUrl = "https://www.mobygames.com/images/covers/l/526580-persona-3-dancing-in-moonlight-playstation-4-front-cover.png" },
+                GBURL = "8747", SFName = "P3D",
+                ImageUrl = "https://cdn.mobygames.com/covers/7364420-persona-3-dancing-in-moonlight-front-cover.jpg" },
             new Game() { Name = "Persona 4 Dancing", ShortName = "P4D", TitleID = "PCSE00764", Region = "USA",
                 Patches = Patches.PSVP4DUSAPatches,
-                ImageUrl = "https://www.mobygames.com/images/covers/l/381830-persona-4-dancing-all-night-ps-vita-front-cover.png" },
+                GBURL = "16093", SFName = "P4D",
+                ImageUrl = "https://cdn.mobygames.com/covers/2024487-persona-4-dancing-all-night-front-cover.jpg" },
             new Game() { Name = "Persona 5 Dancing", ShortName = "P5D", TitleID = "PCSE01275", Region = "USA",
+                GBURL = "8615", SFName = "P5D",
                 Patches = Patches.PSVP5DUSAPatches,
-                ImageUrl = "https://www.mobygames.com/images/covers/l/526581-persona-5-dancing-in-starlight-playstation-4-front-cover.png" },
+                ImageUrl = "https://cdn.mobygames.com/covers/7364423-persona-5-dancing-in-starlight-front-cover.jpg" },
+            new Game() { Name = "Catherine: Full Body", ShortName = "CFB", TitleID = "PCSG01179", Region = "JP",
+                GBURL = "8222", SFName = "CFB",
+                ImageUrl = "https://cdn.mobygames.com/covers/7950619-catherine-full-body-front-cover.png" }
         };
     }
 }

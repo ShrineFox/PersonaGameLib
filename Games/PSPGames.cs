@@ -10,8 +10,9 @@ namespace PersonaGameLib
         public static List<Game> PSPGames = new List<Game>()
         {
             new Game() { Name = "Persona 3 Portable", ShortName = "P3P", TitleID = "PCSE00120", Region = "USA",
+                GBURL = "8583", SFName = "P3P",
                 Patches = Patches.PSPP3PUSAPatches,
-                ImageUrl = "https://www.mobygames.com/images/covers/l/276137-persona-4-golden-ps-vita-front-cover.png" },
+                ImageUrl = "https://cdn.mobygames.com/covers/11273243-shin-megami-tensei-persona-3-portable-front-cover.jpg" },
         };
     }
 }

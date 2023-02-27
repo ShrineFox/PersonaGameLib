@@ -3,7 +3,7 @@
 //
 // Expand executable memory size (default: 0x938A00)
 //
-patch=0,EE,0070C5D4,word,0xA38A00
+patch=0,EE,0070C5D4,word,00A38A00
 
 // Jump to loader entrypoint at 0x938A00
 patch=0,EE,001002C0,word,0824E280

@@ -19,6 +19,14 @@ namespace PersonaGameLib
         /// </summary>
         public string ShortName { get; set; } = "";
         /// <summary>
+        /// Identifier used to link to the game's section on GameBanana.
+        /// </summary>
+        public string GBURL { get; set; } = "";
+        /// <summary>
+        /// Identifier used to link to the game's section on ShrineFox.com/Browse.
+        /// </summary>
+        public string SFName { get; set; } = "";
+        /// <summary>
         /// Identifier used for the game on consoles/storefronts.
         /// </summary>
         public string TitleID { get; set; } = "";
@@ -64,13 +72,18 @@ namespace PersonaGameLib
     {
         public static string GetFromPath(string path)
         {
-            string text = "";
             path = path.Replace("./", System.Web.Hosting.HostingEnvironment.MapPath("~/."));
             if (File.Exists(path))
-            {
-                text = File.ReadAllText(path);
-            }
-            return text;
+                return File.ReadAllText(path);
+            return "";
+        }
+
+        public static byte[] GetBytes(string path)
+        {
+            path = path.Replace("./", System.Web.Hosting.HostingEnvironment.MapPath("~/."));
+            if (File.Exists(path))
+                return File.ReadAllBytes(path);
+            return new byte[0];
         }
     }
 }

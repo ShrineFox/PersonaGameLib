@@ -19,8 +19,8 @@ namespace PersonaGameLib
             },
             new GamePatch() { Name = "Direct Commands", ShortName = "direct_commands", Author = "TGE, updated by Alexankitty",
                 Description = "Allows you to choose a skill or item on your party member's turn, similar to in Persona 4 and 5.",
-                Text = "\npatch=1,EE,0029AFC8,word,00000000 // nop check for if battle unit is not mc -> ai (original instruction 14460005 / bne v0,a2,0x0029AFE0)" +
-                "\npatch=1,EE,0020207C,word,00000000 // load proper unit id for battle menu skill list (original instruction hex 14400006 / bnez v0,0x00202098)" +
+                Text = "\npatch=1,EE,0029AFC8,word,00000000 // nop check for if battle unit is not mc -> ai (original instruction 14460005 / bne v0,a2,000029AFE0)" +
+                "\npatch=1,EE,0020207C,word,00000000 // load proper unit id for battle menu skill list (original instruction hex 14400006 / bnez v0,0000202098)" +
                 "\npatch=1,EE,0020208C,word,8F84B6FC" +
                 "\npatch=1,EE,00202090,word,8C840254 //Load skill list" +
                 "\npatch=1,EE,00202094,word,8C840030 //Load skill list" +
@@ -607,7 +607,7 @@ namespace PersonaGameLib
                 "// Left turn hook" +
                 "// $v1, $a0, $f0 and $f20 are free to use" +
                 "// $f1 contains the right stick X axis as [-127, 128]" +
-                "// -0x4AC4($gp) aka $B53C(gp) is turn rate" +
+                "// -004AC4($gp) aka $B53C(gp) is turn rate" +
                 "// Check if out of deadzone" +
                 "\npatch=1,EE,00503440,word,45000005 // bc1f $5" +
                 "// $f0 = $f1 / 64.0" +
@@ -629,7 +629,7 @@ namespace PersonaGameLib
                 "// Right turn hook" +
                 "// $v1, $a0, $f0 and $f20 are free to use" +
                 "// $f1 contains the right stick X axis as [-127, 128]" +
-                "// -0x4AC4($gp) aka $B53C(gp) is turn rate" +
+                "// -004AC4($gp) aka $B53C(gp) is turn rate" +
                 "// Check if out of deadzone" +
                 "\npatch=1,EE,005033F0,word,45010005 // bc1t $5" +
                 "// $f0 = $f1 / 64.0" +
@@ -675,7 +675,7 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Disable Save File Integrity Check", ShortName = "disable_save_file_integrity_check", Author = "Fendroidus, TGE",
                 Description = "This patch allows you to load modified save files where the checksum doesn't match the contents. Useful for changing the player's name or stats.",
                 Text = "patch=1,EE,002A402C,word,00000000 // don't branch to crc check" +
-                "\npatch=1,EE,002A3FE8,word,10000004 // always branch to 0x002A3FFC regardless if v0 is zero"
+                "\npatch=1,EE,002A3FE8,word,10000004 // always branch to 00002A3FFC regardless if v0 is zero"
             },
             new GamePatch() { Name = "Enable Debug Options in TV World", ShortName = "enable_debug_options_in_tv_world", Author = "Unknown",
                 Description = "This cheat grants you an extra menu option in dungeons that can be used to skip to the next floor or return to the entrance.",
@@ -941,9 +941,9 @@ namespace PersonaGameLib
                 Text = "// NOP out old interlaced field switch" +
                 "patch=1,EE,002AA1B4,word,00000000 // Another field switch here that needs to be NOP'd to prevent// post processing effects from getting misaligned when entering// and leaving menus." +
                 "patch=1,EE,002ADBE0,word,00000000 // Patch sceGsResetGraph arguments to set 480p" +
-                "patch=1,EE,002C81D4,word,24110000 // addiu $s1, 0, 0x00" +
-                "patch=1,EE,002C81D8,word,24120050 // addiu $s2, 0, 0x50" +
-                "patch=1,EE,002C81DC,word,24020001 // addiu $s3, 0, 0x0/",
+                "patch=1,EE,002C81D4,word,24110000 // addiu $s1, 0, 0000" +
+                "patch=1,EE,002C81D8,word,24120050 // addiu $s2, 0, 0050" +
+                "patch=1,EE,002C81DC,word,24020001 // addiu $s3, 0, 000/",
                 OnByDefault = true
             },
             new GamePatch() { Name = "Debug Log", ShortName = "debug_log", Author = "TGE",

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Game.cs" />
     <Compile Include="Games\3DSGames.cs" />
+    <Compile Include="Games\NXGames.cs" />
     <Compile Include="Games\PCGames.cs" />
     <Compile Include="Games\PS2Games.cs" />
     <Compile Include="Games\PS3Games.cs" />

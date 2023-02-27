@@ -24,6 +24,15 @@ namespace PersonaGameLib
                              ShortName = "PS4",
                              Games = Games.PS4Games
             },
+            new Platform() { Name = "Nintendo Switch",
+                             ShortName = "NX",
+                             Games = Games.NXGames,
+                             EmulatorName = "RyujiNX"
+            },
+            new Platform() { Name = "PC",
+                             ShortName = "PC",
+                             Games = Games.PCGames
+            },
             new Platform() { Name = "PlayStation Vita",
                              ShortName = "PSV",
                              Games = Games.PSVGames,
@@ -36,7 +45,7 @@ namespace PersonaGameLib
             },
             new Platform() { Name = "Nintendo 3DS",
                              ShortName = "3DS",
-                             Games = Games.PQGames,
+                             Games = Games.N3DSGames,
                              EmulatorName = "Citra"
             }
         };
