@@ -49,10 +49,14 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Disable Trophies", ShortName = "no_trp", Author = "zarroboogs",
                 Description = "Prevents the game from unlocking trophies.",
             },
-            new GamePatch() { Name = "Content Enabler", ShortName = "dlc", Author = "zarroboogs",
+            new GamePatch() { Name = "Content Enabler", ShortName = "all_dlc", Author = "zarroboogs",
                 Description = "Enables on-disc content and skips DLC unlock messages. " +
                                 "<b>Important:</b> Saves created while this patch is enabled will be unable to load " +
                                 "if you remove the patch in the future.",
+            },
+            new GamePatch() { Name = "Skip DLC Unlock Messages", ShortName = "dlc_msg", Author = "zarroboogs",
+                Description = "Especially useful when using the Content Enabler patch together with a mod that skips " +
+                "the title screen and boots directly into a field.",
             },
             new GamePatch() { Name = "Randomized Battle BGM", ShortName = "bgm_rnd", Author = "zarroboogs",
                 Description = "Plays randomly selected BGM track for each battle",
