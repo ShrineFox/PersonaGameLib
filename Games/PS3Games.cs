@@ -27,14 +27,17 @@ namespace PersonaGameLib
 
             new Game() { Name = "Persona 5", ShortName = "P5", TitleID = "NPEB02436", Region = "EUR",
                 Patches = P5Patches,
+                SFName = "P5",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
 
             new Game() { Name = "Persona 5 EX", ShortName = "P5EX", TitleID = "NPUB31848", Region = "USA",
                 Patches = P5EXPatches,
+                SFName = "P5EX",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
 
             new Game() { Name = "Persona 5 EX", ShortName = "P5EX", TitleID = "NPEB02436", Region = "EUR",
                 Patches = P5EXPatches,
+                SFName = "P5EX",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
         };
     }
