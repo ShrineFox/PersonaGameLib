@@ -97,6 +97,14 @@
     <None Include="App_Data\pnach\E8FCF8EC.pnach">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="App_Data\yml\lipsum\p4au\BLJM61209_patch.yml" />
+    <None Include="App_Data\yml\lipsum\p4au\BLUS31469_patch.yml" />
+    <None Include="App_Data\yml\lipsum\p4au\NPJB00599_patch.yml" />
+    <None Include="App_Data\yml\lipsum\p4au\NPUB31563_patch.yml" />
+    <None Include="App_Data\yml\lipsum\patch.yml" />
+    <None Include="App_Data\yml\p5_ex\hardware\patch.yml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="App_Data\yml\p5_ex\patch.yml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

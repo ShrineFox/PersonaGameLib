@@ -1,0 +1,47 @@
+Version: 1.2
+
+Anchors:
+  p4u2_BLUS_JapaneseMovies: &p4u2_BLUS_JapaneseMovies
+    - [ be32, 0x00622f90, 0x6d6f7669 ] # movieeng/ -> movie/
+    - [ be32, 0x00622f94, 0x652f0000 ] #
+    - [ be32, 0x00622f98, 0x00000000 ] #
+  p4u2_BLUS_IntroSkip: &p4u2_BLUS_IntroSkip
+    - [ be32, 0x00649b60, 0x5f345532 ] # intro movie P4U2_00
+    - [ be32, 0x00649c00, 0x5f345532 ] # intro movie P4U2_01A
+    - [ be32, 0x00649c48, 0x5f345532 ] # intro movie P4U2_01B
+    - [ be32, 0x00668a50, 0x5f6f7270 ] # corp logo   CorpLogoSet1
+  p4u2_BLUS_HeeDat: &p4u2_BLUS_HeeDat
+    - [ be32, 0x000c8ff8, 0x4280000c ] # b          LAB_000c9004 # skip dir check
+    - [ be32, 0x000c90f4, 0x60000000 ] # nop                     # skip .edat check
+    - [ be32, 0x000c9100, 0x42800140 ] # b          LAB_000c9240 # assume valid
+
+################################################################################
+
+PPU-37d2c08ae0b656c5557506b7644e1f6a4f73d0bc: # BLUS31469 v01.01
+  Japanese Movies:
+    Games:
+      "Persona 4 Arena Ultimax":
+        BLUS31469: [ 01.01 ]
+    Author: lipsum
+    Notes: Enable Japanese movies
+    Patch Version: 1.0
+    Patch:
+      - [ load, *p4u2_BLUS_JapaneseMovies ]
+  Intro Skip:
+    Games:
+      "Persona 4 Arena Ultimax":
+        BLUS31469: [ 01.01 ]
+    Author: lipsum
+    Notes: Skip intro movie on boot
+    Patch Version: 1.0
+    Patch:
+      - [ load, *p4u2_BLUS_IntroSkip ]
+  Hee Dat:
+    Games:
+      "Persona 4 Arena Ultimax":
+        BLUS31469: [ 01.01 ]
+    Author: lipsum
+    Notes: Enable on-disc DLC
+    Patch Version: 1.0
+    Patch:
+      - [ load, *p4u2_BLUS_HeeDat ]

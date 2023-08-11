@@ -1,0 +1,883 @@
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_InBattle_PortraitPartsIdx:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting spdID of battle portraits
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B6644C, 0 ] # Inactive Bg spdIdx NONE
+      - [ be32, 0x00B66450, 1 ] # Inactive Bg spdIdx Joker
+      - [ be32, 0x00B66454, 2 ] # Inactive Bg spdIdx Ryuji
+      - [ be32, 0x00B66458, 3 ] # Inactive Bg spdIdx Morgana
+      - [ be32, 0x00B6645C, 4 ] # Inactive Bg spdIdx Ann
+      - [ be32, 0x00B66460, 5 ] # Inactive Bg spdIdx Yusuke
+      - [ be32, 0x00B66464, 6 ] # Inactive Bg spdIdx Makoto
+      - [ be32, 0x00B66468, 7 ] # Inactive Bg spdIdx Haru
+      - [ be32, 0x00B6646C, 0 ] # Inactive Bg spdIdx Futaba
+      - [ be32, 0x00B66470, 8 ] # Inactive Bg spdIdx Akechi
+      - [ be32, 0x00B66474, 0 ] # Inactive Fg spdIdx NONE
+      - [ be32, 0x00B66478, 61 ] # Inactive Fg spdIdx Joker
+      - [ be32, 0x00B6647C, 62 ] # Inactive Fg spdIdx Ryuji
+      - [ be32, 0x00B66480, 63 ] # Inactive Fg spdIdx Morgana
+      - [ be32, 0x00B66484, 64 ] # Inactive Fg spdIdx Ann
+      - [ be32, 0x00B66488, 65 ] # Inactive Fg spdIdx Yusuke
+      - [ be32, 0x00B6648C, 66 ] # Inactive Fg spdIdx Makoto
+      - [ be32, 0x00B66490, 67 ] # Inactive Fg spdIdx Haru
+      - [ be32, 0x00B66494, 0 ] # Inactive Fg spdIdx Futaba
+      - [ be32, 0x00B66498, 68 ] # Inactive Fg spdIdx Akechi
+      - [ be32, 0x00B6649C, 0 ] # Active spdIdx NONE
+      - [ be32, 0x00B664A0, 52 ] # Active spdIdx Joker
+      - [ be32, 0x00B664A4, 53 ] # Active spdIdx Ryuji
+      - [ be32, 0x00B664A8, 54 ] # Active spdIdx Morgana
+      - [ be32, 0x00B664AC, 55 ] # Active spdIdx Ann
+      - [ be32, 0x00B664B0, 56 ] # Active spdIdx Yusuke
+      - [ be32, 0x00B664B4, 57 ] # Active spdIdx Makoto
+      - [ be32, 0x00B664B8, 58 ] # Active spdIdx Haru
+      - [ be32, 0x00B664BC, 0 ] # Active spdIdx Futaba
+      - [ be32, 0x00B664C0, 59 ] # Active spdIdx Akechi
+      - [ be32, 0x00B664C4, 0 ] # Active plgIdx NONE
+      - [ be32, 0x00B664C8, 0 ] # Active plgIdx Joker
+      - [ be32, 0x00B664CC, 1 ] # Active plgIdx Ryuji
+      - [ be32, 0x00B664D0, 2 ] # Active plgIdx Morgana
+      - [ be32, 0x00B664D4, 3 ] # Active plgIdx Ann
+      - [ be32, 0x00B664D8, 4 ] # Active plgIdx Yusuke
+      - [ be32, 0x00B664DC, 5 ] # Active plgIdx Makoto
+      - [ be32, 0x00B664E0, 6 ] # Active plgIdx Haru
+      - [ be32, 0x00B664E4, 0 ] # Active plgIdx Futaba
+      - [ be32, 0x00B664E8, 7 ] # Active plgIdx Akechi
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_InBattle_PortraitPosPerMemberPerTurn:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting battle portrait position per member's turn
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B664EC, 701 ] # @--- Turn @--- X
+      - [ be32, 0x00B664F0, 648 ] # @--- Turn @--- Y
+      - [ be32, 0x00B664F4, 864 ] # @--- Turn -@-- X
+      - [ be32, 0x00B664F8, 659 ] # @--- Turn -@-- Y
+      - [ be32, 0x00B664FC, 1018 ] # @--- Turn --@- X
+      - [ be32, 0x00B66500, 649 ] # @--- Turn --@- Y
+      - [ be32, 0x00B66504, 1177 ] # @--- Turn ---@ X
+      - [ be32, 0x00B66508, 655 ] # @--- Turn ---@ Y
+      - [ be32, 0x00B6650C, 701 ] # -@-- Turn @--- X
+      - [ be32, 0x00B66510, 648 ] # -@-- Turn @--- Y
+      - [ be32, 0x00B66514, 864 ] # -@-- Turn -@-- X
+      - [ be32, 0x00B66518, 659 ] # -@-- Turn -@-- Y
+      - [ be32, 0x00B6651C, 1018 ] # -@-- Turn --@- X
+      - [ be32, 0x00B66520, 649 ] # -@-- Turn --@- Y
+      - [ be32, 0x00B66524, 1177 ] # -@-- Turn ---@ X
+      - [ be32, 0x00B66528, 655 ] # -@-- Turn ---@ Y
+      - [ be32, 0x00B6652C, 701 ] # --@- Turn @--- X
+      - [ be32, 0x00B66530, 648 ] # --@- Turn @--- Y
+      - [ be32, 0x00B66534, 864 ] # --@- Turn -@-- X
+      - [ be32, 0x00B66538, 659 ] # --@- Turn -@-- Y
+      - [ be32, 0x00B6653C, 1018 ] # --@- Turn --@- X
+      - [ be32, 0x00B66540, 649 ] # --@- Turn --@- Y
+      - [ be32, 0x00B66544, 1177 ] # --@- Turn ---@ X
+      - [ be32, 0x00B66548, 655 ] # --@- Turn ---@ Y
+      - [ be32, 0x00B6654C, 701 ] # ---@ Turn @--- X
+      - [ be32, 0x00B66550, 648 ] # ---@ Turn @--- Y
+      - [ be32, 0x00B66554, 864 ] # ---@ Turn -@-- X
+      - [ be32, 0x00B66558, 659 ] # ---@ Turn -@-- Y
+      - [ be32, 0x00B6655C, 1018 ] # ---@ Turn --@- X
+      - [ be32, 0x00B66560, 649 ] # ---@ Turn --@- Y
+      - [ be32, 0x00B66564, 1177 ] # ---@ Turn ---@ X
+      - [ be32, 0x00B66568, 655 ] # ---@ Turn ---@ Y
+      - [ be32, 0x00B6656C, 701 ] # Enemy Turn @--- X
+      - [ be32, 0x00B66570, 648 ] # Enemy Turn @--- Y
+      - [ be32, 0x00B66574, 864 ] # Enemy Turn -@-- X
+      - [ be32, 0x00B66578, 659 ] # Enemy Turn -@-- Y
+      - [ be32, 0x00B6657C, 1018 ] # Enemy Turn --@- X
+      - [ be32, 0x00B66580, 649 ] # Enemy Turn --@- Y
+      - [ be32, 0x00B66584, 1177 ] # Enemy Turn ---@ X
+      - [ be32, 0x00B66588, 655 ] # Enemy Turn ---@ Y
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_InBattle_InactiveHpSpBgPos:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting HP/SP position of inactive battle portraits
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B6658C, 0 ] # Inactive Bg01 NONE X
+      - [ be32, 0x00B66590, 0 ] # Inactive Bg01 NONE Y
+      - [ be32, 0x00B66594, 0 ] # Inactive Bg01 NONE Rot
+      - [ be32, 0x00B66598, 87 ] # Inactive Bg01 Joker X
+      - [ be32, 0x00B6659C, 82 ] # Inactive Bg01 Joker Y
+      - [ be32, 0x00B665A0, -5 ] # Inactive Bg01 Joker Rot
+      - [ be32, 0x00B665A4, 86 ] # Inactive Bg01 Ryuji X
+      - [ be32, 0x00B665A8, 85 ] # Inactive Bg01 Ryuji Y
+      - [ be32, 0x00B665AC, -1 ] # Inactive Bg01 Ryuji Rot
+      - [ be32, 0x00B665B0, 97 ] # Inactive Bg01 Morgana X
+      - [ be32, 0x00B665B4, 89 ] # Inactive Bg01 Morgana Y
+      - [ be32, 0x00B665B8, -5 ] # Inactive Bg01 Morgana Rot
+      - [ be32, 0x00B665BC, 91 ] # Inactive Bg01 Ann X
+      - [ be32, 0x00B665C0, 84 ] # Inactive Bg01 Ann Y
+      - [ be32, 0x00B665C4, 1 ] # Inactive Bg01 Ann Rot
+      - [ be32, 0x00B665C8, 86 ] # Inactive Bg01 Yusuke X
+      - [ be32, 0x00B665CC, 81 ] # Inactive Bg01 Yusuke Y
+      - [ be32, 0x00B665D0, -4 ] # Inactive Bg01 Yusuke Rot
+      - [ be32, 0x00B665D4, 96 ] # Inactive Bg01 Makoto X
+      - [ be32, 0x00B665D8, 88 ] # Inactive Bg01 Makoto Y
+      - [ be32, 0x00B665DC, -2 ] # Inactive Bg01 Makoto Rot
+      - [ be32, 0x00B665E0, 92 ] # Inactive Bg01 Haru X
+      - [ be32, 0x00B665E4, 86 ] # Inactive Bg01 Haru Y
+      - [ be32, 0x00B665E8, -7 ] # Inactive Bg01 Haru Rot
+      - [ be32, 0x00B665EC, 0 ] # Inactive Bg01 Futaba X
+      - [ be32, 0x00B665F0, 0 ] # Inactive Bg01 Futaba Y
+      - [ be32, 0x00B665F4, 0 ] # Inactive Bg01 Futaba Rot
+      - [ be32, 0x00B665F8, 90 ] # Inactive Bg01 Akechi X
+      - [ be32, 0x00B665FC, 84 ] # Inactive Bg01 Akechi Y
+      - [ be32, 0x00B66600, 0 ] # Inactive Bg01 Akechi Rot
+      - [ be32, 0x00B66604, 0 ] # Inactive Bg02 NONE X
+      - [ be32, 0x00B66608, 0 ] # Inactive Bg02 NONE Y
+      - [ be32, 0x00B6660C, 0 ] # Inactive Bg02 NONE Rot
+      - [ be32, 0x00B66610, 115 ] # Inactive Bg02 Joker X
+      - [ be32, 0x00B66614, 93 ] # Inactive Bg02 Joker Y
+      - [ be32, 0x00B66618, 7 ] # Inactive Bg02 Joker Rot
+      - [ be32, 0x00B6661C, 115 ] # Inactive Bg02 Ryuji X
+      - [ be32, 0x00B66620, 89 ] # Inactive Bg02 Ryuji Y
+      - [ be32, 0x00B66624, 1 ] # Inactive Bg02 Ryuji Rot
+      - [ be32, 0x00B66628, 121 ] # Inactive Bg02 Morgana X
+      - [ be32, 0x00B6662C, 99 ] # Inactive Bg02 Morgana Y
+      - [ be32, 0x00B66630, 7 ] # Inactive Bg02 Morgana Rot
+      - [ be32, 0x00B66634, 110 ] # Inactive Bg02 Ann X
+      - [ be32, 0x00B66638, 92 ] # Inactive Bg02 Ann Y
+      - [ be32, 0x00B6663C, 7 ] # Inactive Bg02 Ann Rot
+      - [ be32, 0x00B66640, 110 ] # Inactive Bg02 Yusuke X
+      - [ be32, 0x00B66644, 90 ] # Inactive Bg02 Yusuke Y
+      - [ be32, 0x00B66648, 5 ] # Inactive Bg02 Yusuke Rot
+      - [ be32, 0x00B6664C, 121 ] # Inactive Bg02 Makoto X
+      - [ be32, 0x00B66650, 95 ] # Inactive Bg02 Makoto Y
+      - [ be32, 0x00B66654, -8 ] # Inactive Bg02 Makoto Rot
+      - [ be32, 0x00B66658, 115 ] # Inactive Bg02 Haru X
+      - [ be32, 0x00B6665C, 100 ] # Inactive Bg02 Haru Y
+      - [ be32, 0x00B66660, 5 ] # Inactive Bg02 Haru Rot
+      - [ be32, 0x00B66664, 0 ] # Inactive Bg02 Futaba X
+      - [ be32, 0x00B66668, 0 ] # Inactive Bg02 Futaba Y
+      - [ be32, 0x00B6666C, 0 ] # Inactive Bg02 Futaba Rot
+      - [ be32, 0x00B66670, 106 ] # Inactive Bg02 Akechi X
+      - [ be32, 0x00B66674, 86 ] # Inactive Bg02 Akechi Y
+      - [ be32, 0x00B66678, 0 ] # Inactive Bg02 Akechi Rot
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_InBattle_InactivePortraitPos:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting position of inactive battle portraits
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B6667C, 0 ] # Bg NONE X
+      - [ be32, 0x00B66680, 0 ] # Bg NONE Y
+      - [ be32, 0x00B66684, 11 ] # Bg Joker X
+      - [ be32, 0x00B66688, 14 ] # Bg Joker Y
+      - [ be32, 0x00B6668C, 13 ] # Bg Ryuji X
+      - [ be32, 0x00B66690, 7 ] # Bg Ryuji Y
+      - [ be32, 0x00B66694, 17 ] # Bg Morgana X
+      - [ be32, 0x00B66698, 20 ] # Bg Morgana Y
+      - [ be32, 0x00B6669C, 7 ] # Bg Ann X
+      - [ be32, 0x00B666A0, 11 ] # Bg Ann Y
+      - [ be32, 0x00B666A4, 1 ] # Bg Yusuke X
+      - [ be32, 0x00B666A8, 16 ] # Bg Yusuke Y
+      - [ be32, 0x00B666AC, 16 ] # Bg Makoto X
+      - [ be32, 0x00B666B0, 17 ] # Bg Makoto Y
+      - [ be32, 0x00B666B4, 3 ] # Bg Haru X
+      - [ be32, 0x00B666B8, 0 ] # Bg Haru Y
+      - [ be32, 0x00B666BC, 0 ] # Bg Futaba X
+      - [ be32, 0x00B666C0, 0 ] # Bg Futaba Y
+      - [ be32, 0x00B666C4, 11 ] # Bg Akechi X
+      - [ be32, 0x00B666C8, 15 ] # Bg Akechi Y
+      - [ be32, 0x00B666CC, 0 ] # Fg NONE X
+      - [ be32, 0x00B666D0, 0 ] # Fg NONE Y
+      - [ be32, 0x00B666D4, 22 ] # Fg Joker X
+      - [ be32, 0x00B666D8, 23 ] # Fg Joker Y
+      - [ be32, 0x00B666DC, 21 ] # Fg Ryuji X
+      - [ be32, 0x00B666E0, 21 ] # Fg Ryuji Y
+      - [ be32, 0x00B666E4, 24 ] # Fg Morgana X
+      - [ be32, 0x00B666E8, 28 ] # Fg Morgana Y
+      - [ be32, 0x00B666EC, 22 ] # Fg Ann X
+      - [ be32, 0x00B666F0, 17 ] # Fg Ann Y
+      - [ be32, 0x00B666F4, 14 ] # Fg Yusuke X
+      - [ be32, 0x00B666F8, 23 ] # Fg Yusuke Y
+      - [ be32, 0x00B666FC, 24 ] # Fg Makoto X
+      - [ be32, 0x00B66700, 24 ] # Fg Makoto Y
+      - [ be32, 0x00B66704, 11 ] # Fg Haru X
+      - [ be32, 0x00B66708, 22 ] # Fg Haru Y
+      - [ be32, 0x00B6670C, 0 ] # Fg Futaba X
+      - [ be32, 0x00B66710, 0 ] # Fg Futaba Y
+      - [ be32, 0x00B66714, 13 ] # Fg Akechi X
+      - [ be32, 0x00B66718, 22 ] # Fg Akechi Y
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_InBattle_MiscPos:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting position of battle portraits' HP/SP background
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B66794, -27 ] # 00. ---
+      - [ be32, 0x00B66798, -28 ] # 00. ---
+      - [ be32, 0x00B6679C, -43 ] # 01. ---
+      - [ be32, 0x00B667A0, -26 ] # 01. ---
+      - [ be32, 0x00B667A4, -57 ] # 02. ---
+      - [ be32, 0x00B667A8, -24 ] # 02. ---
+      - [ be32, 0x00B667AC, -28 ] # 03. ---
+      - [ be32, 0x00B667B0, -28 ] # 03. ---
+      - [ be32, 0x00B667B4, -40 ] # 04. ---
+      - [ be32, 0x00B667B8, -27 ] # 04. ---
+      - [ be32, 0x00B667BC, -58 ] # 05. ---
+      - [ be32, 0x00B667C0, -24 ] # 05. ---
+      - [ be32, 0x00B667C4, -27 ] # 06. hp_1 X
+      - [ be32, 0x00B667C8, -29 ] # 06. hp_1 Y
+      - [ be32, 0x00B667CC, -41 ] # 07. hp_10 X
+      - [ be32, 0x00B667D0, -27 ] # 07. hp_10 Y
+      - [ be32, 0x00B667D4, -52 ] # 08. hp_100 X
+      - [ be32, 0x00B667D8, -26 ] # 08. hp_100 Y
+      - [ be32, 0x00B667DC, -26 ] # 09. ---
+      - [ be32, 0x00B667E0, -28 ] # 09. ---
+      - [ be32, 0x00B667E4, -38 ] # 10. ---
+      - [ be32, 0x00B667E8, -27 ] # 10. ---
+      - [ be32, 0x00B667EC, -52 ] # 11. ---
+      - [ be32, 0x00B667F0, -26 ] # 11. ---
+      - [ be32, 0x00B667F4, -23 ] # 12. ---
+      - [ be32, 0x00B667F8, -30 ] # 12. ---
+      - [ be32, 0x00B667FC, -40 ] # 13. ---
+      - [ be32, 0x00B66800, -27 ] # 13. ---
+      - [ be32, 0x00B66804, -52 ] # 14. ---
+      - [ be32, 0x00B66808, -26 ] # 14. ---
+      - [ be32, 0x00B6680C, -22 ] # 15. sp_1 X
+      - [ be32, 0x00B66810, -29 ] # 15. sp_1 Y
+      - [ be32, 0x00B66814, -35 ] # 16. sp_10 X
+      - [ be32, 0x00B66818, -28 ] # 16. sp_10 Y
+      - [ be32, 0x00B6681C, -51 ] # 17. sp_100 X
+      - [ be32, 0x00B66820, -26 ] # 17. sp_100 Y
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_NonBattle_PortraitFgPos:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting foreground position of battle portraits' HP/SP bars
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B66824, 0 ] # Fg NONE X
+      - [ be32, 0x00B66828, 0 ] # Fg NONE Y
+      - [ be32, 0x00B6682C, 11 ] # Fg Joker X
+      - [ be32, 0x00B66830, 9 ] # Fg Joker Y
+      - [ be32, 0x00B66834, 8 ] # Fg Ryuji X
+      - [ be32, 0x00B66838, 14 ] # Fg Ryuji Y
+      - [ be32, 0x00B6683C, 7 ] # Fg Morgana X
+      - [ be32, 0x00B66840, 8 ] # Fg Morgana Y
+      - [ be32, 0x00B66844, 15 ] # Fg Ann X
+      - [ be32, 0x00B66848, 6 ] # Fg Ann Y
+      - [ be32, 0x00B6684C, 13 ] # Fg Yusuke X
+      - [ be32, 0x00B66850, 7 ] # Fg Yusuke Y
+      - [ be32, 0x00B66854, 8 ] # Fg Makoto X
+      - [ be32, 0x00B66858, 7 ] # Fg Makoto Y
+      - [ be32, 0x00B6685C, 8 ] # Fg Haru X
+      - [ be32, 0x00B66860, 22 ] # Fg Haru Y
+      - [ be32, 0x00B66864, 0 ] # Fg Futaba X
+      - [ be32, 0x00B66868, 0 ] # Fg Futaba Y
+      - [ be32, 0x00B6686C, 2 ] # Fg Akechi X
+      - [ be32, 0x00B66870, 7 ] # Fg Akechi Y
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_NonBattle_PortraitPartsIdx:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting spdID of non-battle portraits
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B66874, 0 ] # NONE Bg Back spdIdx
+      - [ be32, 0x00B66878, 0 ] # NONE Bg Front spdIdx
+      - [ be32, 0x00B6687C, 0 ] # NONE Fg spdIdx
+      - [ be32, 0x00B66880, 69 ] # Joker Bg Back spdIdx
+      - [ be32, 0x00B66884, 1 ] # Joker Bg Front spdIdx
+      - [ be32, 0x00B66888, 77 ] # Joker Fg spdIdx
+      - [ be32, 0x00B6688C, 70 ] # Ryuji Bg Back spdIdx
+      - [ be32, 0x00B66890, 2 ] # Ryuji Bg Front spdIdx
+      - [ be32, 0x00B66894, 78 ] # Ryuji Fg spdIdx
+      - [ be32, 0x00B66898, 71 ] # Morgana Bg Back spdIdx
+      - [ be32, 0x00B6689C, 3 ] # Morgana Bg Front spdIdx
+      - [ be32, 0x00B668A0, 79 ] # Morgana Fg spdIdx
+      - [ be32, 0x00B668A4, 72 ] # Ann Bg Back spdIdx
+      - [ be32, 0x00B668A8, 4 ] # Ann Bg Front spdIdx
+      - [ be32, 0x00B668AC, 80 ] # Ann Fg spdIdx
+      - [ be32, 0x00B668B0, 73 ] # Yusuke Bg Back spdIdx
+      - [ be32, 0x00B668B4, 5 ] # Yusuke Bg Front spdIdx
+      - [ be32, 0x00B668B8, 81 ] # Yusuke Fg spdIdx
+      - [ be32, 0x00B668BC, 74 ] # Makoto Bg Back spdIdx
+      - [ be32, 0x00B668C0, 6 ] # Makoto Bg Front spdIdx
+      - [ be32, 0x00B668C4, 82 ] # Makoto Fg spdIdx
+      - [ be32, 0x00B668C8, 75 ] # Haru Bg Back spdIdx
+      - [ be32, 0x00B668CC, 7 ] # Haru Bg Front spdIdx
+      - [ be32, 0x00B668D0, 83 ] # Haru Fg spdIdx
+      - [ be32, 0x00B668D4, 0 ] # Futaba Bg Back spdIdx
+      - [ be32, 0x00B668D8, 0 ] # Futaba Bg Front spdIdx
+      - [ be32, 0x00B668DC, 0 ] # Futaba Fg spdIdx
+      - [ be32, 0x00B668E0, 76 ] # Akechi Bg Back spdIdx
+      - [ be32, 0x00B668E4, 8 ] # Akechi Bg Front spdIdx
+      - [ be32, 0x00B668E8, 84 ] # Akechi Fg spdIdx
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_NonBatle_PortraitPosPerPanelPerMember:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting position of non-battle portraits per member
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B668EC, 0 ] # -@-- NONE X
+      - [ be32, 0x00B668F0, 0 ] # -@-- NONE Y
+      - [ be32, 0x00B668F4, 22 ] # -@-- Joker X
+      - [ be32, 0x00B668F8, -59 ] # -@-- Joker Y
+      - [ be32, 0x00B668FC, 2 ] # -@-- Ryuji X
+      - [ be32, 0x00B66900, -65 ] # -@-- Ryuji Y
+      - [ be32, 0x00B66904, 0 ] # -@-- Morgana X
+      - [ be32, 0x00B66908, -61 ] # -@-- Morgana Y
+      - [ be32, 0x00B6690C, -6 ] # -@-- Ann X
+      - [ be32, 0x00B66910, -67 ] # -@-- Ann Y
+      - [ be32, 0x00B66914, -6 ] # -@-- Yusuke X
+      - [ be32, 0x00B66918, -61 ] # -@-- Yusuke Y
+      - [ be32, 0x00B6691C, -1 ] # -@-- Makoto X
+      - [ be32, 0x00B66920, -61 ] # -@-- Makoto Y
+      - [ be32, 0x00B66924, -12 ] # -@-- Haru X
+      - [ be32, 0x00B66928, -80 ] # -@-- Haru Y
+      - [ be32, 0x00B6692C, 0 ] # -@-- Futaba X
+      - [ be32, 0x00B66930, 0 ] # -@-- Futaba Y
+      - [ be32, 0x00B66934, -8 ] # -@-- Akechi X
+      - [ be32, 0x00B66938, -63 ] # -@-- Akechi Y
+      - [ be32, 0x00B6693C, 0 ] # --@- NONE X
+      - [ be32, 0x00B66940, 0 ] # --@- NONE Y
+      - [ be32, 0x00B66944, 0 ] # --@- Joker X
+      - [ be32, 0x00B66948, 0 ] # --@- Joker Y
+      - [ be32, 0x00B6694C, -8 ] # --@- Ryuji X
+      - [ be32, 0x00B66950, -62 ] # --@- Ryuji Y
+      - [ be32, 0x00B66954, -5 ] # --@- Morgana X
+      - [ be32, 0x00B66958, -60 ] # --@- Morgana Y
+      - [ be32, 0x00B6695C, -16 ] # --@- Ann X
+      - [ be32, 0x00B66960, -59 ] # --@- Ann Y
+      - [ be32, 0x00B66964, -17 ] # --@- Yusuke X
+      - [ be32, 0x00B66968, -56 ] # --@- Yusuke Y
+      - [ be32, 0x00B6696C, -9 ] # --@- Makoto X
+      - [ be32, 0x00B66970, -55 ] # --@- Makoto Y
+      - [ be32, 0x00B66974, -22 ] # --@- Haru X
+      - [ be32, 0x00B66978, -75 ] # --@- Haru Y
+      - [ be32, 0x00B6697C, 0 ] # --@- Futaba X
+      - [ be32, 0x00B66980, 0 ] # --@- Futaba Y
+      - [ be32, 0x00B66984, -12 ] # --@- Akechi X
+      - [ be32, 0x00B66988, -58 ] # --@- Akechi Y
+      - [ be32, 0x00B6698C, 0 ] # ---@ NONE X
+      - [ be32, 0x00B66990, 0 ] # ---@ NONE Y
+      - [ be32, 0x00B66994, 0 ] # ---@ Joker X
+      - [ be32, 0x00B66998, 0 ] # ---@ Joker Y
+      - [ be32, 0x00B6699C, -23 ] # ---@ Ryuji X
+      - [ be32, 0x00B669A0, -56 ] # ---@ Ryuji Y
+      - [ be32, 0x00B669A4, -25 ] # ---@ Morgana X
+      - [ be32, 0x00B669A8, -56 ] # ---@ Morgana Y
+      - [ be32, 0x00B669AC, -34 ] # ---@ Ann X
+      - [ be32, 0x00B669B0, -57 ] # ---@ Ann Y
+      - [ be32, 0x00B669B4, -37 ] # ---@ Yusuke X
+      - [ be32, 0x00B669B8, -51 ] # ---@ Yusuke Y
+      - [ be32, 0x00B669BC, -28 ] # ---@ Makoto X
+      - [ be32, 0x00B669C0, -52 ] # ---@ Makoto Y
+      - [ be32, 0x00B669C4, -39 ] # ---@ Haru X
+      - [ be32, 0x00B669C8, -69 ] # ---@ Haru Y
+      - [ be32, 0x00B669CC, 0 ] # ---@ Futaba X
+      - [ be32, 0x00B669D0, 0 ] # ---@ Futaba Y
+      - [ be32, 0x00B669D4, -27 ] # ---@ Akechi X
+      - [ be32, 0x00B669D8, -54 ] # ---@ Akechi Y
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_NonBatle_BgBoxes:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting position of non-battle portraits' bg boxes
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B669DC, -42 ] # BgBox01 Black X1
+      - [ be32, 0x00B669E0, 17 ] # BgBox01 Black Y1
+      - [ be32, 0x00B669E4, 43 ] # BgBox01 Black X2
+      - [ be32, 0x00B669E8, -32 ] # BgBox01 Black Y2
+      - [ be32, 0x00B669EC, -24 ] # BgBox01 Black X3
+      - [ be32, 0x00B669F0, 34 ] # BgBox01 Black Y3
+      - [ be32, 0x00B669F4, 69 ] # BgBox01 Black X4
+      - [ be32, 0x00B669F8, 21 ] # BgBox01 Black Y4
+      - [ be32, 0x00B669FC, -46 ] # BgBox01 White X1
+      - [ be32, 0x00B66A00, 16 ] # BgBox01 White Y1
+      - [ be32, 0x00B66A04, 44 ] # BgBox01 White X2
+      - [ be32, 0x00B66A08, -34 ] # BgBox01 White Y2
+      - [ be32, 0x00B66A0C, -26 ] # BgBox01 White X3
+      - [ be32, 0x00B66A10, 36 ] # BgBox01 White Y3
+      - [ be32, 0x00B66A14, 72 ] # BgBox01 White X4
+      - [ be32, 0x00B66A18, 23 ] # BgBox01 White Y4
+      - [ be32, 0x00B66A1C, -24 ] # BgBox02 Black X1
+      - [ be32, 0x00B66A20, -13 ] # BgBox02 Black Y1
+      - [ be32, 0x00B66A24, 32 ] # BgBox02 Black X2
+      - [ be32, 0x00B66A28, -28 ] # BgBox02 Black Y2
+      - [ be32, 0x00B66A2C, -14 ] # BgBox02 Black X3
+      - [ be32, 0x00B66A30, 39 ] # BgBox02 Black Y3
+      - [ be32, 0x00B66A34, 38 ] # BgBox02 Black X4
+      - [ be32, 0x00B66A38, 24 ] # BgBox02 Black Y4
+      - [ be32, 0x00B66A3C, -27 ] # BgBox02 White X1
+      - [ be32, 0x00B66A40, -14 ] # BgBox02 White Y1
+      - [ be32, 0x00B66A44, 34 ] # BgBox02 White X2
+      - [ be32, 0x00B66A48, -31 ] # BgBox02 White Y2
+      - [ be32, 0x00B66A4C, -15 ] # BgBox02 White X3
+      - [ be32, 0x00B66A50, 41 ] # BgBox02 White Y3
+      - [ be32, 0x00B66A54, 41 ] # BgBox02 White X4
+      - [ be32, 0x00B66A58, 25 ] # BgBox02 White Y4
+      - [ be32, 0x00B66A5C, -62 ] # BgBox03 Black X1
+      - [ be32, 0x00B66A60, 7 ] # BgBox03 Black Y1
+      - [ be32, 0x00B66A64, 44 ] # BgBox03 Black X2
+      - [ be32, 0x00B66A68, -19 ] # BgBox03 Black Y2
+      - [ be32, 0x00B66A6C, -31 ] # BgBox03 Black X3
+      - [ be32, 0x00B66A70, 43 ] # BgBox03 Black Y3
+      - [ be32, 0x00B66A74, 59 ] # BgBox03 Black X4
+      - [ be32, 0x00B66A78, 12 ] # BgBox03 Black Y4
+      - [ be32, 0x00B66A7C, -65 ] # BgBox03 White X1
+      - [ be32, 0x00B66A80, 6 ] # BgBox03 White Y1
+      - [ be32, 0x00B66A84, 45 ] # BgBox03 White X2
+      - [ be32, 0x00B66A88, -21 ] # BgBox03 White Y2
+      - [ be32, 0x00B66A8C, -32 ] # BgBox03 White X3
+      - [ be32, 0x00B66A90, 46 ] # BgBox03 White Y3
+      - [ be32, 0x00B66A94, 61 ] # BgBox03 White X4
+      - [ be32, 0x00B66A98, 13 ] # BgBox03 White Y4
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_00:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author:
+    Notes:
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00B66A9C, 0 ] # ---
+      - [ be32, 0x00B66AA0, 0 ] # ---
+      - [ be32, 0x00B66AA4, 0 ] # ---
+      - [ be32, 0x00B66AA8, 0 ] # ---
+      - [ be32, 0x00B66AAC, 0 ] # ---
+      - [ be32, 0x00B66AB0, 0 ] # ---
+      - [ be32, 0x00B66AB4, 0 ] # ---
+      - [ be32, 0x00B66AB8, 0 ] # ---
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_InBattle_ActivePortraitPartsPos:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting position of active battle portraits
+    Patch Version: 1.0
+    Patch:
+      - [ bef32, 0x00B66ABC, -78 ] # Joker spdX
+      - [ bef32, 0x00B66AC0, -104 ] # Joker spdY
+      - [ bef32, 0x00B66AC4, -74 ] # Joker plgX
+      - [ bef32, 0x00B66AC8, -102 ] # Joker plgY
+      - [ bef32, 0x00B66ACC, -13 ] # Joker ailTopX
+      - [ bef32, 0x00B66AD0, -45 ] # Joker ailTopY
+      - [ bef32, 0x00B66AD4, -29 ] # Joker ailBottomX
+      - [ bef32, 0x00B66AD8, 28 ] # Joker ailBottomY
+      - [ bef32, 0x00B66ADC, -81 ] # Ryuji spdX
+      - [ bef32, 0x00B66AE0, -103 ] # Ryuji spdY
+      - [ bef32, 0x00B66AE4, -75 ] # Ryuji plgX
+      - [ bef32, 0x00B66AE8, -99 ] # Ryuji plgY
+      - [ bef32, 0x00B66AEC, 36 ] # Ryuji ailTopX
+      - [ bef32, 0x00B66AF0, -33 ] # Ryuji ailTopY
+      - [ bef32, 0x00B66AF4, -21 ] # Ryuji ailBottomX
+      - [ bef32, 0x00B66AF8, 33 ] # Ryuji ailBottomY
+      - [ bef32, 0x00B66AFC, -77 ] # Morgana spdX
+      - [ bef32, 0x00B66B00, -92 ] # Morgana spdY
+      - [ bef32, 0x00B66B04, -75 ] # Morgana plgX
+      - [ bef32, 0x00B66B08, -86 ] # Morgana plgY
+      - [ bef32, 0x00B66B0C, 9 ] # Morgana ailTopX
+      - [ bef32, 0x00B66B10, -33 ] # Morgana ailTopY
+      - [ bef32, 0x00B66B14, -26 ] # Morgana ailBottomX
+      - [ bef32, 0x00B66B18, 30 ] # Morgana ailBottomY
+      - [ bef32, 0x00B66B1C, -81 ] # Ann spdX
+      - [ bef32, 0x00B66B20, -100 ] # Ann spdY
+      - [ bef32, 0x00B66B24, -72 ] # Ann plgX
+      - [ bef32, 0x00B66B28, -97 ] # Ann plgY
+      - [ bef32, 0x00B66B2C, 14 ] # Ann ailTopX
+      - [ bef32, 0x00B66B30, -34 ] # Ann ailTopY
+      - [ bef32, 0x00B66B34, -31 ] # Ann ailBottomX
+      - [ bef32, 0x00B66B38, 24 ] # Ann ailBottomY
+      - [ bef32, 0x00B66B3C, -78 ] # Yusuke spdX
+      - [ bef32, 0x00B66B40, -103 ] # Yusuke spdY
+      - [ bef32, 0x00B66B44, -73 ] # Yusuke plgX
+      - [ bef32, 0x00B66B48, -97 ] # Yusuke plgY
+      - [ bef32, 0x00B66B4C, -16 ] # Yusuke ailTopX
+      - [ bef32, 0x00B66B50, -37 ] # Yusuke ailTopY
+      - [ bef32, 0x00B66B54, -32 ] # Yusuke ailBottomX
+      - [ bef32, 0x00B66B58, 34 ] # Yusuke ailBottomY
+      - [ bef32, 0x00B66B5C, -87 ] # Makoto spdX
+      - [ bef32, 0x00B66B60, -111 ] # Makoto spdY
+      - [ bef32, 0x00B66B64, -85 ] # Makoto plgX
+      - [ bef32, 0x00B66B68, -102 ] # Makoto plgY
+      - [ bef32, 0x00B66B6C, -13 ] # Makoto ailTopX
+      - [ bef32, 0x00B66B70, -45 ] # Makoto ailTopY
+      - [ bef32, 0x00B66B74, -24 ] # Makoto ailBottomX
+      - [ bef32, 0x00B66B78, 36 ] # Makoto ailBottomY
+      - [ bef32, 0x00B66B7C, -86 ] # Haru spdX
+      - [ bef32, 0x00B66B80, -108 ] # Haru spdY
+      - [ bef32, 0x00B66B84, -80 ] # Haru plgX
+      - [ bef32, 0x00B66B88, -101 ] # Haru plgY
+      - [ bef32, 0x00B66B8C, -4 ] # Haru ailTopX
+      - [ bef32, 0x00B66B90, -45 ] # Haru ailTopY
+      - [ bef32, 0x00B66B94, -28 ] # Haru ailBottomX
+      - [ bef32, 0x00B66B98, 34 ] # Haru ailBottomY
+      - [ bef32, 0x00B66B9C, 0 ] # Futaba spdX
+      - [ bef32, 0x00B66BA0, 0 ] # Futaba spdY
+      - [ bef32, 0x00B66BA4, 0 ] # Futaba plgX
+      - [ bef32, 0x00B66BA8, 0 ] # Futaba plgY
+      - [ bef32, 0x00B66BAC, 0 ] # Futaba ailTopX
+      - [ bef32, 0x00B66BB0, 0 ] # Futaba ailTopY
+      - [ bef32, 0x00B66BB4, 0 ] # Futaba ailBottomX
+      - [ bef32, 0x00B66BB8, 0 ] # Futaba ailBottomY
+      - [ bef32, 0x00B66BBC, -83 ] # Akechi spdX
+      - [ bef32, 0x00B66BC0, -104 ] # Akechi spdY
+      - [ bef32, 0x00B66BC4, -88 ] # Akechi plgX
+      - [ bef32, 0x00B66BC8, -99 ] # Akechi plgY
+      - [ bef32, 0x00B66BCC, 12 ] # Akechi ailTopX
+      - [ bef32, 0x00B66BD0, -31 ] # Akechi ailTopY
+      - [ bef32, 0x00B66BD4, -28 ] # Akechi ailBottomX
+      - [ bef32, 0x00B66BD8, 36 ] # Akechi ailBottomY
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_pp_Unknown_NamesAreGuesses:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author:
+    Notes:
+    Patch Version: 1.0
+    Patch:
+      - [ bef32, 0x00B66BDC, 24 ] # NONE X
+      - [ bef32, 0x00B66BE0, -44 ] # NONE Y
+      - [ bef32, 0x00B66BE4, 0.8799999952 ] # NONE Rot
+      - [ bef32, 0x00B66BE8, 69 ] # Joker X
+      - [ bef32, 0x00B66BEC, -29 ] # Joker Y
+      - [ bef32, 0x00B66BF0, 0.400000006 ] # Joker Rot
+      - [ bef32, 0x00B66BF4, 32 ] # Ryuji X
+      - [ bef32, 0x00B66BF8, -34 ] # Ryuji Y
+      - [ bef32, 0x00B66BFC, 0.6999999881 ] # Ryuji Rot
+      - [ bef32, 0x00B66C00, 51 ] # Morgana X
+      - [ bef32, 0x00B66C04, 30 ] # Morgana Y
+      - [ bef32, 0x00B66C08, 0.8000000119 ] # Morgana Rot
+      - [ bef32, 0x00B66C0C, 20 ] # Ann X
+      - [ bef32, 0x00B66C10, 59 ] # Ann Y
+      - [ bef32, 0x00B66C14, 0.6499999762 ] # Ann Rot
+      - [ bef32, 0x00B66C18, -15 ] # Yusuke X
+      - [ bef32, 0x00B66C1C, -13 ] # Yusuke Y
+      - [ bef32, 0x00B66C20, 0.6499999762 ] # Yusuke Rot
+      - [ bef32, 0x00B66C24, -61 ] # Makoto X
+      - [ bef32, 0x00B66C28, 48 ] # Makoto Y
+      - [ bef32, 0x00B66C2C, 0.6000000238 ] # Makoto Rot
+      - [ bef32, 0x00B66C30, -43 ] # Haru X
+      - [ bef32, 0x00B66C34, -18 ] # Haru Y
+      - [ bef32, 0x00B66C38, 0.400000006 ] # Haru Rot
+      - [ bef32, 0x00B66C3C, -24 ] # Futaba X
+      - [ bef32, 0x00B66C40, 37 ] # Futaba Y
+      - [ bef32, 0x00B66C44, 0.4399999976 ] # Futaba Rot
+      - [ bef32, 0x00B66C48, -3 ] # Akechi X
+      - [ bef32, 0x00B66C4C, -35 ] # Akechi Y
+      - [ bef32, 0x00B66C50, 0.400000006 ] # Akechi Rot
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_TextBox:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting textbox appearance
+    Patch Version: 1.0
+    Patch:
+      # bottom layer upper
+      - [ bef32, 0x00DAA4D0, 39  ] # v00x
+      - [ bef32, 0x00DAA4D4, 33  ] # v00y
+      - [ bef32, 0x00DAA4D8, 661 ] # v01x
+      - [ bef32, 0x00DAA4DC, 12  ] # v01y
+      - [ bef32, 0x00DAA4E0, 737 ] # v02x
+      - [ bef32, 0x00DAA4E4, 4   ] # v02y
+      - [ bef32, 0x00DAA4E8, 735 ] # v03x
+      - [ bef32, 0x00DAA4EC, 33  ] # v03y
+      # bottom layer lower
+      - [ bef32, 0x00DAA4F0, 762 ] # v04x
+      - [ bef32, 0x00DAA4F4, 228 ] # v04y
+      - [ bef32, 0x00DAA4F8, 720 ] # v05x
+      - [ bef32, 0x00DAA4FC, 233 ] # v05y
+      - [ bef32, 0x00DAA500, 76  ] # v06x
+      - [ bef32, 0x00DAA504, 152 ] # v06y
+      - [ bef32, 0x00DAA508, 32  ] # v07x
+      - [ bef32, 0x00DAA50C, 61  ] # v07y
+      # middle layer upper
+      - [ bef32, 0x00DAA534, 42  ] # v00x
+      - [ bef32, 0x00DAA538, 38  ] # v00y
+      - [ bef32, 0x00DAA53C, 727 ] # v01x
+      - [ bef32, 0x00DAA540, 15  ] # v01y
+      # middle layer lower
+      - [ bef32, 0x00DAA544, 748 ] # v02x
+      - [ bef32, 0x00DAA548, 227 ] # v02y
+      - [ bef32, 0x00DAA54C, 75  ] # v03x
+      - [ bef32, 0x00DAA550, 146 ] # v03y
+      # top layer upper
+      - [ bef32, 0x00DAA560, 46  ] # v00x
+      - [ bef32, 0x00DAA564, 45  ] # v00y
+      - [ bef32, 0x00DAA568, 716 ] # v01x
+      - [ bef32, 0x00DAA56C, 24  ] # v01y
+      # top layer lower
+      - [ bef32, 0x00DAA570, 742 ] # v02x
+      - [ bef32, 0x00DAA574, 223 ] # v02y
+      - [ bef32, 0x00DAA578, 71  ] # v03x
+      - [ bef32, 0x00DAA57C, 135 ] # v03y
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_PortraitColorTestAilmentDark:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting dark ailment color
+    Patch Version: 1.0
+    Patch:
+      # 0x541212cc burn
+      # 0x190101cc wrath
+      # 0x110285cc envy
+      # 0x423b30cc mouse
+      # 0x1f5076cc freeze
+      # 0x542f04cc shock
+      # 0x514502cc dizzy
+      # 0x37655ecc confuse
+      # 0x70118fcc fear
+      # 0x596264cc hunger
+      # 0x490540cc sleep
+      # 0xd10303cc rage
+      # 0x170622cc despair
+      # 0x67316acc brainwash
+      # 0x6b0d39cc lust
+      # 0x1c2627cc forget
+      # 0x000000cc susceptible
+      - [ be32, 0x0028dea0, 0x3c605412 ] # burn
+      - [ be32, 0x0028dea4, 0x606312cc ] #
+      - [ be32, 0x0028deb8, 0x3c601901 ] # wrath
+      - [ be32, 0x0028debc, 0x606301cc ] #
+      - [ be32, 0x0028ded0, 0x3c601102 ] # envy
+      - [ be32, 0x0028ded4, 0x606385cc ] #
+      - [ be32, 0x0028dee8, 0x3c60423b ] # mouse
+      - [ be32, 0x0028deec, 0x606330cc ] #
+      - [ be32, 0x0028df00, 0x3c601f50 ] # freeze
+      - [ be32, 0x0028df04, 0x606376cc ] #
+      - [ be32, 0x0028df18, 0x3c60542f ] # shock
+      - [ be32, 0x0028df1c, 0x606304cc ] #
+      - [ be32, 0x0028df30, 0x3c605145 ] # dizzy
+      - [ be32, 0x0028df34, 0x606302cc ] #
+      - [ be32, 0x0028df48, 0x3c603765 ] # confuse
+      - [ be32, 0x0028df4c, 0x60635ecc ] #
+      - [ be32, 0x0028df60, 0x3c607011 ] # fear
+      - [ be32, 0x0028df64, 0x60638fcc ] #
+      - [ be32, 0x0028df78, 0x3c605962 ] # hunger
+      - [ be32, 0x0028df7c, 0x606364cc ] #
+      - [ be32, 0x0028df90, 0x3c604905 ] # sleep
+      - [ be32, 0x0028df94, 0x606340cc ] #
+      - [ be32, 0x0028dfac, 0x3c60d103 ] # rage
+      - [ be32, 0x0028dfb0, 0x606303cc ] #
+      - [ be32, 0x0028dfc4, 0x3c601706 ] # despair
+      - [ be32, 0x0028dfc8, 0x606322cc ] #
+      - [ be32, 0x0028dfdc, 0x3c606731 ] # brainwash
+      - [ be32, 0x0028dfe0, 0x60636acc ] #
+      - [ be32, 0x0028dff4, 0x3c606b0d ] # lust
+      - [ be32, 0x0028dff8, 0x606339cc ] #
+      - [ be32, 0x0028e00c, 0x3c601c26 ] # forget
+      - [ be32, 0x0028e010, 0x606327cc ] #
+      - [ be32, 0x0028e024, 0x386000cc ] # susceptible
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_PortraitColorTestAilmentBright:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting bright ailment color
+    Patch Version: 1.0
+    Patch:
+      # 0xfded84ff burn
+      # 0xfd4545ff wrath
+      # 0x9da1fbff envy
+      # 0xdcdcdcff mouse
+      # 0xcef8f9ff freeze
+      # 0xfedc3eff shock
+      # 0xfcfac4ff dizzy
+      # 0xc8f989ff confuse
+      # 0xf9cef0ff fear
+      #            hunger (same as burn)
+      # 0xde9dffff sleep
+      # 0xfcfae6ff rage
+      # 0xba93c9ff despair
+      # 0xfe32f2ff brainwash
+      # 0xf84bb1ff lust
+      # 0x80e9f5ff forget
+      # 0x1b1b1bff susceptible
+      - [ be32, 0x0028af10, 0x3c60fded ] # burn 0x____RRGG
+      - [ be32, 0x0028af14, 0x606384ff ] #      0x____BBff
+      - [ be32, 0x0028af2c, 0x3cc0fd45 ] # wrath
+      - [ be32, 0x0028af30, 0x60c645ff ] #
+      - [ be32, 0x0028af44, 0x3cc09da1 ] # envy
+      - [ be32, 0x0028af48, 0x60c6fbff ] #
+      - [ be32, 0x0028af5c, 0x3cc0dcdc ] # mouse
+      - [ be32, 0x0028af60, 0x60c6dcff ] #
+      - [ be32, 0x0028af74, 0x3cc0cef8 ] # freeze
+      - [ be32, 0x0028af78, 0x60c6f9ff ] #
+      - [ be32, 0x0028af8c, 0x3cc0fedc ] # shock
+      - [ be32, 0x0028af90, 0x60c63eff ] #
+      - [ be32, 0x0028afa4, 0x3cc0fcfa ] # dizzy
+      - [ be32, 0x0028afa8, 0x60c6c4ff ] #
+      - [ be32, 0x0028afbc, 0x3cc0c8f9 ] # confuse
+      - [ be32, 0x0028afc0, 0x60c689ff ] #
+      - [ be32, 0x0028afd4, 0x3cc0f9ce ] # fear
+      - [ be32, 0x0028afd8, 0x60c6f0ff ] #
+                                         # hunger (same as burn)
+                                         #
+      - [ be32, 0x0028affc, 0x3c60de9d ] # sleep
+      - [ be32, 0x0028b000, 0x6063ffff ] #
+      - [ be32, 0x0028b014, 0x3c60fcfa ] # rage
+      - [ be32, 0x0028b018, 0x6063e6ff ] #
+      - [ be32, 0x0028b02c, 0x3c60ba93 ] # despair
+      - [ be32, 0x0028b030, 0x6063c9ff ] #
+      - [ be32, 0x0028b044, 0x3c60fe32 ] # brainwash
+      - [ be32, 0x0028b048, 0x6063f2ff ] #
+      - [ be32, 0x0028b05c, 0x3c60f84b ] # lust
+      - [ be32, 0x0028b060, 0x6063b1ff ] #
+      - [ be32, 0x0028b074, 0x3c6080e9 ] # forget
+      - [ be32, 0x0028b078, 0x6063f5ff ] #
+      - [ be32, 0x0028b08c, 0x3c601b1b ] # susceptible
+      - [ be32, 0x0028b090, 0x60631bff ] #
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  p5_PortraitColorTest:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: for manually setting portrait color
+    Patch Version: 1.0
+    Patch:
+      #- [ be32, 0x0028fbbc, 0x3bc00000 ] # li r30,0x0    # black - 0x00000000
+      #- [ be32, 0x0028fdb0, 0x3ba0ff00 ] # li r29,-0x100 # white - 0xffffff00
+      #- [ be32, 0x0028fe64, 0x93a30000 ] # stw r29,0x0(r3)
+      #- [ be32, 0x0028ff88, 0x93c30000 ] # stw r30,0x0(r3)
+      #- [ be32, 0x00290008, 0x93a30000 ] # stw r29,0x0(r3)
+      #- [ be32, 0x002901ec, 0x63a40000 ] # ori r4,r29,0x0
+      #- [ be32, 0x0029032c, 0x93a30000 ] # stw r29,0x0(r3)
+      #- [ be32, 0x002903f4, 0x93c10070 ] # stw r30,0x70(r1)
+      #- [ be32, 0x002901f8, 0x3c8066ff ] # lis r4,0x66ff # heal color?
+      #- [ be32, 0x002901fc, 0x6084dc00 ] # ori r4,r4,0xdc00
+      #- [ be32, 0x00290440, 0x3c805a00 ] # lis r4,0x5a00 # hit color?
+      #- [ be32, 0x00290444, 0x608400cc ] # ori r4,r4,0xcc
+      # ff0000 red - ???
+      - [ be32, 0x28fe64, 0x48b44bc2 ]
+      - [ be32, 0xb44bc0, 0x3fa0ff00 ] # lis r29, 0xrrgg
+      - [ be32, 0xb44bc4, 0x63bd0000 ] # ori r29, r29, 0xbb00
+      - [ be32, 0xb44bc8, 0x93a30000 ] # stw r29, 0(r3)
+      - [ be32, 0xb44bcc, 0x3ba0ff00 ] # li  r29, -0x100
+      - [ be32, 0xb44bd0, 0x4828fe6a ]
+      # ff7f00 orange - dungeon inner
+      - [ be32, 0x28ff88, 0x48b44bd6 ]
+      - [ be32, 0xb44bd4, 0x3fc0ff7f ] # lis r30, 0xrrgg
+      - [ be32, 0xb44bd8, 0x63de0000 ] # ori r30, r30, 0xbb00
+      - [ be32, 0xb44bdc, 0x93c30000 ] # stw r30, 0(r3)
+      - [ be32, 0xb44be0, 0x3bc00000 ] # li  r30, 0x0
+      - [ be32, 0xb44be4, 0x4828ff8e ]
+      # ffff00 yellow - ???
+      - [ be32, 0x290008, 0x48b44bea ]
+      - [ be32, 0xb44be8, 0x3fa0ffff ] # lis r29, 0xrrgg
+      - [ be32, 0xb44bec, 0x63bd0000 ] # ori r29, r29, 0xbb00
+      - [ be32, 0xb44bf0, 0x93a30000 ] # stw r29, 0(r3)
+      - [ be32, 0xb44bf4, 0x3ba0ff00 ] # li  r29, -0x100
+      - [ be32, 0xb44bf8, 0x4829000e ]
+      # 00ff00 green - dungeon outer
+      - [ be32, 0x2901ec, 0x48b44bfe ]
+      - [ be32, 0xb44bfc, 0x3fa000ff ] # lis r29, 0xrrgg
+      - [ be32, 0xb44c00, 0x63bd0000 ] # ori r29, r29, 0xbb00
+      - [ be32, 0xb44c04, 0x63a40000 ] # ori r4, r29, 0x0
+      - [ be32, 0xb44c08, 0x3ba0ff00 ] # li  r29, -0x100
+      - [ be32, 0xb44c0c, 0x482901f2 ]
+      # 0000ff blue - ???
+      - [ be32, 0x29032c, 0x48b44c12 ]
+      - [ be32, 0xb44c10, 0x3fa00000 ] # lis r29, 0xrrgg
+      - [ be32, 0xb44c14, 0x63bdff00 ] # ori r29, r29, 0xbb00
+      - [ be32, 0xb44c18, 0x93a30000 ] # stw r29, 0(r3)
+      - [ be32, 0xb44c1c, 0x3ba0ff00 ] # li  r29, -0x100
+      - [ be32, 0xb44c20, 0x48290332 ]
+      # 4b0082 purple - active
+      - [ be32, 0x2903f4, 0x48b44c26 ]
+      - [ be32, 0xb44c24, 0x3fc04b00 ] # lis r30, 0xrrgg
+      - [ be32, 0xb44c28, 0x63de8200 ] # ori r30, r30, 0xbb00
+      - [ be32, 0xb44c2c, 0x93c10070 ] # stw r30, 0x70(r1)
+      - [ be32, 0xb44c30, 0x3bc00000 ] # li  r30, 0x0
+      - [ be32, 0xb44c34, 0x482903fa ]
+PPU-b8c34f774adb367761706a7f685d4f8d9d355426:
+  Skip DLC Check:
+    Games:
+      "Persona 5":
+        BLES02247: [ All ]
+        NPEB02436: [ All ]
+        BLUS31604: [ All ]
+        NPUB31848: [ All ]
+    Author: Lipsum
+    Notes: Skips requirement for DLC .edat/.rap files
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x0019b830, 0x60000000 ]
+      - [ be32, 0x0019b83c, 0x60000000 ]

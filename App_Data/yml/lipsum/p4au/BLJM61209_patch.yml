@@ -1,0 +1,47 @@
+Version: 1.2
+
+Anchors:
+  p4u2_BLJM_EnglishSubs: &p4u2_BLJM_EnglishSubs
+    - [ be32, 0x006479e8, 0x656e6700 ] # jpn -> eng
+    - [ be32, 0x00657d60, 0x656e6700 ] #
+  p4u2_BLJM_IntroSkip: &p4u2_BLJM_IntroSkip
+    - [ be32, 0x00649be0, 0x5f345532 ] # intro movie P4U2_00
+    - [ be32, 0x00649c80, 0x5f345532 ] # intro movie P4U2_01A
+    - [ be32, 0x00649cc8, 0x5f345532 ] # intro movie P4U2_01B
+    - [ be32, 0x00668ae0, 0x5f6f7270 ] # corp logo   CorpLogoSet1
+    - [ be32, 0x00668af0, 0x5f657361 ] # CesaDisp
+  p4u2_BLJM_HeeDat: &p4u2_BLJM_HeeDat
+    - [ be32, 0x000c8ff4, 0x4280000c ] # b          LAB_000c9000 # skip dir check
+    - [ be32, 0x000c90f0, 0x60000000 ] # nop                     # skip .edat check
+    - [ be32, 0x000c90fc, 0x42800140 ] # b          LAB_000c923c # assume valid
+
+################################################################################
+
+PPU-4923354ef0a4dcfda9c239d3e6712d1bc65014a9: # BLJM61209 v01.03
+  English Subtitles:
+    Games:
+      "Persona4 The ULTIMAX ULTRA SUPLEX HOLD":
+        BLJM61209: [ 01.03 ]
+    Author: lipsum
+    Notes: Enable English subtitles
+    Patch Version: 1.0
+    Patch:
+      - [ load, *p4u2_BLJM_EnglishSubs ]
+  Intro Skip:
+    Games:
+      "Persona4 The ULTIMAX ULTRA SUPLEX HOLD":
+        BLJM61209: [ 01.03 ]
+    Author: lipsum
+    Notes: Skip intro movie on boot
+    Patch Version: 1.0
+    Patch:
+      - [ load, *p4u2_BLJM_IntroSkip ]
+  Hee Dat:
+    Games:
+      "Persona4 The ULTIMAX ULTRA SUPLEX HOLD":
+        BLJM61209: [ 01.03 ]
+    Author: lipsum
+    Notes: Enable on-disc DLC
+    Patch Version: 1.0
+    Patch:
+      - [ load, *p4u2_BLJM_HeeDat ]
