@@ -18,6 +18,12 @@ namespace PersonaGameLib
         /// Abbreviated title of the game.
         /// </summary>
         public string ShortName { get; set; } = "";
+
+        /// <summary>
+        /// Abbreviation of the platform the game is on.
+        /// </summary>
+        public string Platform { get; set; } = "";
+
         /// <summary>
         /// Identifier used to link to the game's section on GameBanana.
         /// </summary>
@@ -70,9 +76,9 @@ namespace PersonaGameLib
 
     public class FileUtil
     {
-        public static string GetFromPath(string path)
+        public static string GetTextFromPath(string path)
         {
-            path = path.Replace("./", System.Web.Hosting.HostingEnvironment.MapPath("~/."));
+            path = Path.GetFullPath(path);
             if (File.Exists(path))
                 return File.ReadAllText(path);
             return "";
@@ -80,7 +86,7 @@ namespace PersonaGameLib
 
         public static byte[] GetBytes(string path)
         {
-            path = path.Replace("./", System.Web.Hosting.HostingEnvironment.MapPath("~/."));
+            path = Path.GetFullPath(path);
             if (File.Exists(path))
                 return File.ReadAllBytes(path);
             return new byte[0];

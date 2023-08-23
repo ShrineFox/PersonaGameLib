@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+
 
 namespace PersonaGameLib
 {
@@ -12,9 +12,9 @@ namespace PersonaGameLib
             "Encounter BGM Random Order", "Encounter BGM in Order", "Fix Script Printing Functions" };
 
         private static List<GamePatch> P5Patches = Patches.ParseYML(
-            FileUtil.GetFromPath("./App_Data/yml/patch.yml"));
+            FileUtil.GetTextFromPath("./App_Data/yml/patch.yml"));
         private static List<GamePatch> P5EXPatches = Patches.ParseYML(
-            FileUtil.GetFromPath("./App_Data/yml/p5_ex/patch.yml"))
+            FileUtil.GetTextFromPath("./App_Data/yml/p5_ex/patch.yml"))
             .Concat(P5Patches.Where(x => !disabledEXPatches.Any(y => y.Equals(x.Name))))
             .ToList();
 
@@ -22,21 +22,25 @@ namespace PersonaGameLib
         {
             new Game() { Name = "Persona 5", ShortName = "P5", TitleID = "NPUB31848", Region = "USA",
                 Patches = P5Patches,
+                Platform = "PS3",
                 SFName = "P5", GBURL = "7545",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
 
             new Game() { Name = "Persona 5", ShortName = "P5", TitleID = "NPEB02436", Region = "EUR",
                 Patches = P5Patches,
+                Platform = "PS3",
                 SFName = "P5",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
 
             new Game() { Name = "Persona 5 EX", ShortName = "P5EX", TitleID = "NPUB31848", Region = "USA",
                 Patches = P5EXPatches,
+                Platform = "PS3",
                 SFName = "P5EX",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
 
             new Game() { Name = "Persona 5 EX", ShortName = "P5EX", TitleID = "NPEB02436", Region = "EUR",
                 Patches = P5EXPatches,
+                Platform = "PS3",
                 SFName = "P5EX",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
         };
