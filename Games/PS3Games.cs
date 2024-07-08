@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-
 namespace PersonaGameLib
 {
     public partial class Games
@@ -12,9 +11,9 @@ namespace PersonaGameLib
             "Encounter BGM Random Order", "Encounter BGM in Order", "Fix Script Printing Functions" };
 
         private static List<GamePatch> P5Patches = Patches.ParseYML(
-            FileUtil.GetTextFromPath("./App_Data/yml/patch.yml"));
+            FileUtil.GetTextFromPath(System.Web.Hosting.HostingEnvironment.MapPath("~/./App_Data/yml/patch.yml")));
         private static List<GamePatch> P5EXPatches = Patches.ParseYML(
-            FileUtil.GetTextFromPath("./App_Data/yml/p5_ex/patch.yml"))
+            FileUtil.GetTextFromPath(System.Web.Hosting.HostingEnvironment.MapPath("~/./App_Data/yml/p5_ex/patch.yml")))
             .Concat(P5Patches.Where(x => !disabledEXPatches.Any(y => y.Equals(x.Name))))
             .ToList();
 

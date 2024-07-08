@@ -8,7 +8,7 @@ namespace PersonaGameLib
         {
         new GamePatch() { Name = "HostFS", ShortName = "hostFS", Author = "TGE",
                 Description = "Loads external files from folders named after the game's archives when running a game from an ELF in PCSX2. Make sure hostFS=enabled in PCSX2_vm.ini.",
-                Text = FileUtil.GetTextFromPath("./App_Data/pnach/94A82AAA.pnach"),
+                Text = FileUtil.GetTextFromPath(System.Web.Hosting.HostingEnvironment.MapPath("~/./App_Data/pnach/94A82AAA.pnach")),
                 AlwaysOn = true,
                 OnByDefault = true,
                 TargetPlatform = "emulator"
@@ -658,7 +658,7 @@ namespace PersonaGameLib
         {
             new GamePatch() { Name = "HostFS", ShortName = "hostFS", Author = "TGE",
                 Description = "Loads external files from folders named after the game's archives when running a game from an ELF in PCSX2. Make sure hostFS=enabled in PCSX2_vm.ini.",
-                Text = FileUtil.GetTextFromPath("./App_Data/pnach/DEDC3B71.pnach"),
+                Text = FileUtil.GetTextFromPath(System.Web.Hosting.HostingEnvironment.MapPath("~/./App_Data/pnach/DEDC3B71.pnach")),
                 AlwaysOn = true,
                 OnByDefault = true,
                 TargetPlatform = "emulator"
