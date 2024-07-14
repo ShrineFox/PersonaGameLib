@@ -929,8 +929,7 @@ namespace PersonaGameLib
                 "patch=1,EE,002BF304,word,9385D7EE" +
                 "patch=1,EE,002BF30C,word,9382D7EE",
                 AlwaysOn = true,
-                OnByDefault = true,
-                TargetPlatform = "emulator"
+                OnByDefault = true
             },
             new GamePatch() { Name = "480p Resolution", ShortName = "480p_resolution", Author = "TGE",
                 Description = "Upscale graphics to 480p natively.",
