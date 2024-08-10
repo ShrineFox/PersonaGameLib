@@ -32,6 +32,10 @@ namespace PersonaGameLib
                 SFName = "SMT3HD",
                 Platform = "PC",
                 ImageUrl = "https://cdn.mobygames.com/covers/1783257-shin-megami-tensei-nocturne-front-cover.jpg" },
+            new Game() { Name = "Shin Megami Tensei: Nocturne HD", ShortName = "SMTVV",
+                SFName = "SMTVV", GBURL = "19905",
+                Platform = "PC",
+                ImageUrl = "https://cdn.mobygames.com/covers/1783257-shin-megami-tensei-nocturne-front-cover.jpg" },
         };
     }
 }
