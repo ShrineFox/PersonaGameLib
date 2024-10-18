@@ -36,6 +36,11 @@ namespace PersonaGameLib
                 SFName = "SMTVV", GBURL = "19905",
                 Platform = "PC",
                 ImageUrl = "https://cdn.mobygames.com/covers/1783257-shin-megami-tensei-nocturne-front-cover.jpg" },
+            new Game() { Name = "Metaphor: ReFantazio", ShortName = "MF",
+                SFName = "MF", GBURL = "21201",
+                Platform = "PC",
+                ImageUrl = "https://cdn.mobygames.com/covers/19229556-metaphor-refantazio-playstation-4-front-cover.png" },
+
         };
     }
 }

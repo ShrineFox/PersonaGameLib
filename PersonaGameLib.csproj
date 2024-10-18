@@ -17,46 +17,28 @@
     <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters" Version="1.3.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="App_Data\modcpk\PQ2\canonNames\code.bin">
+    <None Update="wwwroot\App_Data\modcpk\PQ2\canonNames\code.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="App_Data\modcpk\PQ2\canonNames\exheader.bin">
+    <None Update="wwwroot\App_Data\modcpk\PQ2\canonNames\exheader.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="App_Data\modcpk\PQ2\code.bin">
+    <None Update="wwwroot\App_Data\modcpk\PQ2\code.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="App_Data\modcpk\PQ2\exheader.bin">
+    <None Update="wwwroot\App_Data\modcpk\PQ2\exheader.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="App_Data\modcpk\PQ\canonNames\code.bin">
+    <None Update="wwwroot\App_Data\modcpk\PQ\canonNames\code.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="App_Data\modcpk\PQ\canonNames\exheader.bin">
+    <None Update="wwwroot\App_Data\modcpk\PQ\canonNames\exheader.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="App_Data\modcpk\PQ\code.bin">
+    <None Update="wwwroot\App_Data\modcpk\PQ\code.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="App_Data\modcpk\PQ\exheader.bin">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="App_Data\pnach\94A82AAA.pnach">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="App_Data\pnach\DEDC3B71.pnach">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="App_Data\pnach\E8FCF8EC.pnach">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="App_Data\yml\p5_ex\hardware\patch.yml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="App_Data\yml\p5_ex\patch.yml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="App_Data\yml\patch.yml">
+    <None Update="wwwroot\App_Data\modcpk\PQ\exheader.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

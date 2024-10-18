@@ -15,35 +15,35 @@ namespace PersonaGameLib
                 "<br>Also supports optional language-specific .cpk files, which take priority when the system language isn't English (e.x. <kbd>mod_F.cpk</kbd> for French)" +
                 "<br>Additionally, loose files can be loaded from <kbd>data/p5r/bind</kbd> or language-dependent equivalent (e.x. <kbd>data/p5r/bind_F</kbd> for French)",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Bypass opening logos/movie",
                 LongDescription = "Skips boot logos and intro movie (can still be viewed in Thieves Den).",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "PS4 FW 5.05 Backport", ShortName = "0505", Author = "zarroboogs",
                 Description = "Run on firmware 5.05+.",
                 LongDescription = "Allows the game to run on the lowest possible moddable PS4 firmware, and all those above it.",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "P5 Save Bonus Enabler", ShortName = "p5_save", Author = "zarroboogs",
                 Description = "Enables P5 save bonus without P5 saves present on system.",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Enable Share Button", ShortName = "share_button", Author = "zarroboogs",
                 Description = "Enables video recording and screenshots using share button.",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Global Square Menu", ShortName = "square", Author = "zarroboogs",
                 Description = "Square button menu usable everywhere",
                 LongDescription = "Enables the square menu globally (e.g. in Thieves Den and in Velvet Room or during events or game sections which disable it).",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             // Optional Patches
             new GamePatch() { Name = "Disable Trophies", ShortName = "no_trp", Author = "zarroboogs",
@@ -79,17 +79,17 @@ namespace PersonaGameLib
                 LongDescription = "Loads modded files from a <kbd>mod.cpk</kbd> file in <code>/data/p3d</code> on the PS4's internal memory via FTP." +
                 "<br>Additionally, loose files can be loaded from <kbd>data/p3d/bind</kbd>",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Skips boot logos and intro movie",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Disable Screenshot Overlay", ShortName = "overlay", Author = "zarroboogs",
                 Description = "Removes the annoying copyright overlay from in-game screenshots",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             // Optional Patches
             new GamePatch() { Name = "Disable Trophies", ShortName = "no_trp", Author = "zarroboogs",
@@ -104,12 +104,12 @@ namespace PersonaGameLib
                 LongDescription = "Loads modded files from a <kbd>mod.cpk</kbd> file in <code>/data/p4d</code> on the PS4's internal memory via FTP." +
                 "<br>Additionally, loose files can be loaded from <kbd>data/p4d/bind</kbd>",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Skips boot logos and intro movie",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             // Optional Patches
             new GamePatch() { Name = "Disable Trophies", ShortName = "no_trp", Author = "zarroboogs",
@@ -124,17 +124,17 @@ namespace PersonaGameLib
                 LongDescription = "Loads modded files from a <kbd>mod.cpk</kbd> file in <code>/data/p5d</code> on the PS4's internal memory via FTP." +
                 "<br>Additionally, loose files can be loaded from <kbd>data/p5d/bind</kbd>",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Skips boot logos and intro movie",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Disable Screenshot Overlay", ShortName = "overlay", Author = "zarroboogs",
                 Description = "Removes the annoying copyright overlay from in-game screenshots",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             // Optional Patches
             new GamePatch() { Name = "Disable Trophies", ShortName = "no_trp", Author = "zarroboogs",

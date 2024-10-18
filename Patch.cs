@@ -32,9 +32,9 @@ namespace PersonaGameLib
         /// <summary>
         /// When true, the patch is enabled to start with but can be disabled by user.
         /// </summary>
-        public bool OnByDefault { get; set; } = false;
+        public bool Enabled { get; set; } = false;
         /// <summary>
-        /// List of other patch ShortNames that do not work with this one.
+        /// When true, the patch is chosen to be downloaded by the user.
         /// </summary>
         public List<string> Conflicts { get; set; } = new List<string>();
         /// <summary>

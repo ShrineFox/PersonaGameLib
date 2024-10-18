@@ -1,4 +1,5 @@
-﻿using PersonaGameLib;
+﻿using Microsoft.AspNetCore.Hosting;
+using PersonaGameLib;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -76,14 +77,6 @@ namespace PersonaGameLib
 
     public class FileUtil
     {
-        public static string GetTextFromPath(string path)
-        {
-            path = Path.GetFullPath(path);
-            if (File.Exists(path))
-                return File.ReadAllText(path);
-            return "";
-        }
-
         public static byte[] GetBytes(string path)
         {
             path = Path.GetFullPath(path);

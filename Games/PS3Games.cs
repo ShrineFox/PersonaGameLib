@@ -6,14 +6,12 @@ namespace PersonaGameLib
 {
     public partial class Games
     {
-        public static string[] disabledEXPatches = new string[] { "Mod Cpk Support", "File Access Log", 
-            "P5 Modding Community Patches", "Force PSZ Models", "Disable EXIST.TBL Check", 
+        public static string[] disabledEXPatches = new string[] { "Mod Cpk Support", "File Access Log",
+            "P5 Modding Community Patches", "Force PSZ Models", "Disable EXIST.TBL Check",
             "Encounter BGM Random Order", "Encounter BGM in Order", "Fix Script Printing Functions" };
 
-        private static List<GamePatch> P5Patches = Patches.ParseYML(
-            FileUtil.GetTextFromPath("App_Data/yml/patch.yml"));
-        private static List<GamePatch> P5EXPatches = Patches.ParseYML(
-            FileUtil.GetTextFromPath("App_Data/yml/p5_ex/patch.yml"))
+        private static List<GamePatch> P5Patches = Patches.ParseYML(Patches.P5_PatchYml);
+        private static List<GamePatch> P5EXPatches = Patches.ParseYML(Patches.P5EX_PatchYml)
             .Concat(P5Patches.Where(x => !disabledEXPatches.Any(y => y.Equals(x.Name))))
             .ToList();
 

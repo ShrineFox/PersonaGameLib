@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace PersonaGameLib
 {
@@ -14,12 +15,12 @@ namespace PersonaGameLib
                 "mod.cpk patch, otherwise the game will crash. An empty mod.cpk file (containing only an empty dummy.txt file) is " +
                 "provided with each mod.cpk patch - replace it with your own if you want to replace game files.",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Canon Name Patch", ShortName = "canonNames", Author = "DeathChaos25",
                 Description = "Patches the MC name functions to display the \"canon\" names. Normally the player can't fit some of these " +
                 "names in the name input boxes due to their length.",
-                OnByDefault = true
+                Enabled = true
             }
         };
 

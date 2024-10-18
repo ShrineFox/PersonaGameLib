@@ -12,7 +12,7 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Skips boot logos and intro movie (can still be viewed in Thieves Den)",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             }
         };
 
@@ -23,7 +23,7 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Skips boot logos and intro movie (can still be viewed in Thieves Den)",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             }
         };
 
@@ -32,7 +32,7 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Skips boot logos and intro movie (can still be viewed in Thieves Den)",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             }
         };
 
@@ -41,7 +41,7 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Intro Skip", ShortName = "intro_skip", Author = "zarroboogs",
                 Description = "Skips boot logos and intro movie (can still be viewed in Thieves Den)",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             }
         };
     }

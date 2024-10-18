@@ -68,13 +68,13 @@ namespace PersonaGameLib
                     case "Mod Cpk Support":
                     case "P5EX":
                     case "Mod SPRX":
-                        patch.OnByDefault = true;
+                        patch.Enabled = true;
                         patch.AlwaysOn = true;
                         break;
                     case "File Access Log":
                     case "Fix Script Printing Functions":
                     case "Skip Intro Videos":
-                        patch.OnByDefault = true;
+                        patch.Enabled = true;
                         break;
                 }
             }

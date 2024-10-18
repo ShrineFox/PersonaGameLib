@@ -13,7 +13,7 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Intro Skip", ShortName = "introSkip", Author = "zarroboogs",
                 Description = "Skips logos and intro movie when booting the game.",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Mod Support", ShortName = "modSupport", Author = "zarroboogs",
                 Description = "File replacement via (from highest to lowest load priority):" +
@@ -25,7 +25,7 @@ namespace PersonaGameLib
                 "Make sure to disable the Data Install setting via the Config menu as files from installed data will override some game files (even if they were replaced via a mod). " +
                 "Loose file loading is done via a leftover debug function and might be unstable.",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             }
         };
     }

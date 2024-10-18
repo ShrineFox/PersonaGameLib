@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using static Microsoft.AspNetCore.Hosting.IWebHostEnvironment;
 
 namespace PersonaGameLib
 {
@@ -8,9 +9,9 @@ namespace PersonaGameLib
         {
         new GamePatch() { Name = "HostFS", ShortName = "hostFS", Author = "TGE",
                 Description = "Loads external files from folders named after the game's archives when running a game from an ELF in PCSX2. Make sure hostFS=enabled in PCSX2_vm.ini.",
-                Text = FileUtil.GetTextFromPath("App_Data/pnach/94A82AAA.pnach"),
+                Text = Patches.P3FESHostFS,
                 AlwaysOn = true,
-                OnByDefault = true,
+                Enabled = true,
                 TargetPlatform = "emulator"
             },
             new GamePatch() { Name = "Direct Commands", ShortName = "direct_commands", Author = "TGE, updated by Alexankitty",
@@ -95,7 +96,7 @@ namespace PersonaGameLib
                 "\npatch=1,EE,0069AC38,word,00000000" +
                 "\npatch=1,EE,0069AC3C,word,080A8E47" +
                 "\npatch=1,EE,0069AC40,word,00000000",
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Debug Log", ShortName = "debug_log", Author = "TGE, Tupelov",
                 Description = "Prints string output from the game's original debug functions into the PCSX2 log. Also prints the filename and path of each file the game accesses in real time, helpful for finding and narrowing down the location of assets like models, fields etc.",
@@ -103,7 +104,7 @@ namespace PersonaGameLib
                 "\npatch=1,EE,005CDE83,byte,0A // patch file load print string" +
                 "\npatch=1,EE,00100DAC,word,0C14896A // patch file load function call to debug print" +
                 "\npatch=0,EE,00558cd4,word,00000000// fixes sceopen error",
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Unlimited Persona Changes", ShortName = "unlimited_persona_changes", Author = "TGE, Tupelov",
                 Description = "This cheat allows you to change personas multiple times per turn.",
@@ -116,14 +117,14 @@ namespace PersonaGameLib
             new GamePatch() { Name = "Field Script Anywhere", ShortName = "fldscript", Author = "Tupelov",
                 Description = "Use the Field Script Anywhere (from Tupelov's Game Patches).",
                 Text = "patch=1,EE,001c8998,word,00000000 //nops debug check",
-                OnByDefault = false
+                Enabled = false
             },
             new GamePatch() { Name = "No Battle UI", ShortName = "nobattleui", Author = "Tupelov",
                 Description = "Hides UI graphics in battle (from Tupelov's Game Patches).",
                 Text = "// return immediatly upon entering battle_panel_draw" +
                 "\npatch=1,EE,001fdac0,word,03e00008 // jr ra" +
                 "\npatch=1,EE,001fdac4,word,00000000 // nop",
-                OnByDefault = false
+                Enabled = false
             },
             new GamePatch() { Name = "Non-crusty Velvet Room BG", ShortName = "velvetBG", Author = "Tupelov",
                 Description = "Makes the game not load the crusty background in the Velvet Room (from Tupelov's Game Patches).",
@@ -161,7 +162,7 @@ namespace PersonaGameLib
                 "\npatch=1,EE,006201A0,word,00000000// Removes string for background sprite" +
                 "\npatch=1,EE,006201A4,word,00000000// Removes string for background sprite" +
                 "\npatch=1,EE,006201A8,word,00000000// Removes string for background sprite",
-                OnByDefault = false
+                Enabled = false
             },
             new GamePatch() { Name = "Debug Options in Tartarus", ShortName = "debug_options_in_tartarus", Author = "Unknown",
                 Description = "This cheat grants you an extra menu option in Tartarus that can be used to skip to the next floor or return to the entrance.",
@@ -650,7 +651,7 @@ namespace PersonaGameLib
                 Text = "patch=1,EE,F0511884,extended,00511887" +
                 "\npatch=1,EE,2017F6B8,word,24420001",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             }
         };
 
@@ -658,15 +659,15 @@ namespace PersonaGameLib
         {
             new GamePatch() { Name = "HostFS", ShortName = "hostFS", Author = "TGE",
                 Description = "Loads external files from folders named after the game's archives when running a game from an ELF in PCSX2. Make sure hostFS=enabled in PCSX2_vm.ini.",
-                Text = FileUtil.GetTextFromPath("App_Data/pnach/DEDC3B71.pnach"),
+                Text = Patches.P4HostFS,
                 AlwaysOn = true,
-                OnByDefault = true,
+                Enabled = true,
                 TargetPlatform = "emulator"
             },
             new GamePatch() { Name = "Debug Log", ShortName = "debug_log", Author = "TGE",
                 Description = "Prints string output from the game's original debug functions into the PCSX2 log. Also prints the filename and path of each file the game accesses in real time, helpful for finding and narrowing down the location of assets like models, fields etc.",
                 Text = "patch=1,EE,00421DE8,word,00000000 // always branch even if not debug",
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Disable Save File Integrity Check", ShortName = "disable_save_file_integrity_check", Author = "Fendroidus, TGE",
                 Description = "This patch allows you to load modified save files where the checksum doesn't match the contents. Useful for changing the player's name or stats.",
@@ -907,7 +908,7 @@ namespace PersonaGameLib
                 Text = "patch=1,EE,F0511884,extended,00511887" +
                 "\npatch=1,EE,2017F6B8,word,24420001",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
         };
 
@@ -929,7 +930,7 @@ namespace PersonaGameLib
                 "patch=1,EE,002BF304,word,9385D7EE" +
                 "patch=1,EE,002BF30C,word,9382D7EE",
                 AlwaysOn = true,
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "480p Resolution", ShortName = "480p_resolution", Author = "TGE",
                 Description = "Upscale graphics to 480p natively.",
@@ -939,7 +940,7 @@ namespace PersonaGameLib
                 "patch=1,EE,002C81D4,word,24110000 // addiu $s1, 0, 0000" +
                 "patch=1,EE,002C81D8,word,24120050 // addiu $s2, 0, 0050" +
                 "patch=1,EE,002C81DC,word,24020001 // addiu $s3, 0, 000/",
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Debug Log", ShortName = "debug_log", Author = "TGE",
                 Description = "Prints string output from the game's original debug functions into the PCSX2 log. Also prints the filename and path of each file the game accesses in real time, helpful for finding and narrowing down the location of assets like models, fields etc.",
@@ -954,7 +955,7 @@ namespace PersonaGameLib
                 "patch=1,EE,003A13E4,word,02802021" +
                 "patch=1,EE,003A13E8,word,080B99F4" +
                 "patch=1,EE,003076EC,word,00000000",
-                OnByDefault = true
+                Enabled = true
             },
             new GamePatch() { Name = "Shadow Alpha Hack", ShortName = "shadow_alpha_hack", Author = "Krisan Thyme",
                 Description = "Optional shadow alpha hack",
