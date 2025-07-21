@@ -14,6 +14,7 @@ namespace PersonaGameLib
         private static List<GamePatch> P5EXPatches = Patches.ParseYML(Patches.P5EX_PatchYml)
             .Concat(P5Patches.Where(x => !disabledEXPatches.Any(y => y.Equals(x.Name))))
             .ToList();
+        private static List<GamePatch> P5BetaPatches = Patches.ParseYML(Patches.P5_Beta_PatchYml);
 
         public static List<Game> PS3Games = new List<Game>()
         {
@@ -39,6 +40,12 @@ namespace PersonaGameLib
                 Patches = P5EXPatches,
                 Platform = "PS3",
                 SFName = "P5EX",
+                ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
+
+            new Game() { Name = "Persona 5 Beta", ShortName = "P5", TitleID = "TEST00000", Region = "JP",
+                Patches = P5BetaPatches,
+                Platform = "PS3",
+                SFName = "P5Beta",
                 ImageUrl = "https://cdn.mobygames.com/covers/2723792-persona-5-front-cover.jpg" },
         };
     }
